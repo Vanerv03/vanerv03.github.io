@@ -1,0 +1,109 @@
+/* inicio.css */
+
+/* Barra rosa superior */
+.barra-rosa {
+    background-color: #ff69b4 !important;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #333; /* Fondo oscuro */
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 50px; /* Ajuste para que no se solape con la barra rosa */
+    z-index: 999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para separar la barra */
+}
+
+/* Contenedor de la barra de navegación */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Enlaces de navegación */
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff69b4; /* Color rosa al pasar el mouse */
+}
+
+/* Contenedor de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+.search-container button {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #ff1493;
+}
+
+/* Secciones */
+section {
+    margin-top: 140px; /* Asegura que el contenido no quede cubierto por la barra rosa y navbar */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Títulos de las secciones */
+h1, h2 {
+    color: #333;
+}
